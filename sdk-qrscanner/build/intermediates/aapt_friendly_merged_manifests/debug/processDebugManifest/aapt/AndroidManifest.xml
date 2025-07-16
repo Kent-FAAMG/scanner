@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bureau.qrscanner.sdk" >
+
+    <uses-sdk android:minSdkVersion="24" />
+
+    <!-- Camera permission for QR scanning -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Flashlight permission for torch functionality -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- Internet permission for API calls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Camera feature requirement -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application>
+        <activity
+            android:name="com.bureau.qrscanner.sdk.QrScannerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

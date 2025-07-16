@@ -1,0 +1,23 @@
+package com.bureau.qrscanner.sdk.ui.screens;
+
+@kotlin.Metadata(mv = {1, 9, 0}, k = 2, xi = 48, d1 = {"\u0000P\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\u001a.\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0012\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\u0007H\u0003\u001a4\u0010\b\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u00032\u0006\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\u000eH\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\b\u000f\u0010\u0010\u001a(\u0010\u0011\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\n2\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00010\u0013H\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\b\u0014\u0010\u0015\u001a$\u0010\u0016\u001a\u00020\u00012\b\b\u0002\u0010\r\u001a\u00020\u000e2\u0006\u0010\t\u001a\u00020\nH\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\b\u0017\u0010\u0018\u001a$\u0010\u0019\u001a\u00020\u00012\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00010\u00132\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00010\u0013H\u0003\u001a$\u0010\u001c\u001a\u00020\u00012\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00010\u00132\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00010\u0013H\u0003\u001aR\u0010\u001d\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u001e\u001a\u00020\u001f2\u0012\u0010 \u001a\u000e\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020\u00010\u00072\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\u00010\u00132\f\u0010#\u001a\b\u0012\u0004\u0012\u00020\u00010\u0013H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\b$\u0010%\u001a8\u0010&\u001a\u00020\u00012\u0006\u0010\'\u001a\u00020(2\u0012\u0010 \u001a\u000e\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020\u00010\u00072\u0012\u0010)\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\u0007H\u0002\u001a\u0018\u0010*\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010+\u001a\u00020,H\u0002\u0082\u0002\u0007\n\u0005\b\u00a1\u001e0\u0001\u00a8\u0006-"}, d2 = {"EnhancedFlashButton", "", "isFlashOn", "", "camera", "Landroidx/camera/core/Camera;", "onToggle", "Lkotlin/Function1;", "EnhancedQrScannerOverlay", "primaryColor", "Landroidx/compose/ui/graphics/Color;", "isAnimationEnabled", "isQrDetected", "modifier", "Landroidx/compose/ui/Modifier;", "EnhancedQrScannerOverlay-Iv8Zu3U", "(JZZLandroidx/compose/ui/Modifier;)V", "InfoCarousel", "onDismiss", "Lkotlin/Function0;", "InfoCarousel-DxMtmZc", "(JLkotlin/jvm/functions/Function0;)V", "NudgesSection", "NudgesSection-4WTKRHQ", "(Landroidx/compose/ui/Modifier;J)V", "PermissionDeniedScreen", "onRequestPermission", "onClose", "PermissionRationaleScreen", "ScannerScreen", "scannerConfig", "Lcom/bureau/qrscanner/sdk/ScannerConfig;", "onQrCodeScanned", "", "onClosePressed", "onTimeout", "ScannerScreen-3J-VO9M", "(JLcom/bureau/qrscanner/sdk/ScannerConfig;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V", "processImageProxy", "imageProxy", "Landroidx/camera/core/ImageProxy;", "onQrDetected", "setupAutoFocus", "previewView", "Landroidx/camera/view/PreviewView;", "sdk-qrscanner_debug"})
+public final class ScannerScreenKt {
+    
+    @androidx.compose.runtime.Composable()
+    private static final void EnhancedFlashButton(boolean isFlashOn, androidx.camera.core.Camera camera, kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> onToggle) {
+    }
+    
+    private static final void setupAutoFocus(androidx.camera.core.Camera camera, androidx.camera.view.PreviewView previewView) {
+    }
+    
+    @androidx.compose.runtime.Composable()
+    private static final void PermissionRationaleScreen(kotlin.jvm.functions.Function0<kotlin.Unit> onRequestPermission, kotlin.jvm.functions.Function0<kotlin.Unit> onClose) {
+    }
+    
+    @androidx.compose.runtime.Composable()
+    private static final void PermissionDeniedScreen(kotlin.jvm.functions.Function0<kotlin.Unit> onRequestPermission, kotlin.jvm.functions.Function0<kotlin.Unit> onClose) {
+    }
+    
+    private static final void processImageProxy(androidx.camera.core.ImageProxy imageProxy, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> onQrCodeScanned, kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> onQrDetected) {
+    }
+}

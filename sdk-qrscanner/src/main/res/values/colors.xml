@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Scanner Colors -->
+    <color name="scanner_overlay_background">#99000000</color>
+    <color name="scanner_frame_white">#FFFFFF</color>
+    <color name="scanner_text_white">#FFFFFF</color>
+    <color name="scanner_text_black">#000000</color>
+    <color name="scanner_button_background">#80000000</color>
+    <color name="scanner_button_background_white">#E6FFFFFF</color>
+    <color name="scanner_flash_active">#FFE6A500</color>
+    <color name="scanner_instruction_background">#B3000000</color>
+    
+    <!-- Status colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="error_red">#F44336</color>
+    <color name="warning_yellow">#FF9800</color>
+    
+    <!-- Bureau brand colors -->
+    <color name="bureau_primary">#007AFF</color>
+    <color name="bureau_secondary">#5856D6</color>
+    
+    <!-- Neutral colors -->
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#424242</color>
+    
+    <!-- Transparent colors -->
+    <color name="transparent">#00000000</color>
+    <color name="white_transparent">#80FFFFFF</color>
+    <color name="black_transparent">#80000000</color>
+</resources> 

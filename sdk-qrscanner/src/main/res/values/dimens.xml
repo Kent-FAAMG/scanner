@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Scanner Frame Dimensions -->
+    <dimen name="scanner_frame_corner_length">30dp</dimen>
+    <dimen name="scanner_frame_corner_width">4dp</dimen>
+    <dimen name="scanner_frame_corner_radius">2dp</dimen>
+    
+    <!-- Button Dimensions -->
+    <dimen name="scanner_button_size">40dp</dimen>
+    <dimen name="scanner_button_icon_size">20dp</dimen>
+    <dimen name="scanner_help_button_size">48dp</dimen>
+    <dimen name="scanner_help_icon_size">24dp</dimen>
+    
+    <!-- Text Sizes -->
+    <dimen name="scanner_timeout_text_size">13sp</dimen>
+    <dimen name="scanner_instruction_text_size">14sp</dimen>
+    <dimen name="scanner_title_text_size">20sp</dimen>
+    <dimen name="scanner_body_text_size">16sp</dimen>
+    
+    <!-- Spacing -->
+    <dimen name="scanner_padding_xs">4dp</dimen>
+    <dimen name="scanner_padding_sm">8dp</dimen>
+    <dimen name="scanner_padding_md">12dp</dimen>
+    <dimen name="scanner_padding_lg">16dp</dimen>
+    <dimen name="scanner_padding_xl">24dp</dimen>
+    <dimen name="scanner_padding_xxl">32dp</dimen>
+    
+    <!-- Margins -->
+    <dimen name="scanner_margin_xs">4dp</dimen>
+    <dimen name="scanner_margin_sm">8dp</dimen>
+    <dimen name="scanner_margin_md">12dp</dimen>
+    <dimen name="scanner_margin_lg">16dp</dimen>
+    <dimen name="scanner_margin_xl">24dp</dimen>
+    <dimen name="scanner_margin_xxl">32dp</dimen>
+    
+    <!-- Border Radius -->
+    <dimen name="scanner_border_radius_sm">8dp</dimen>
+    <dimen name="scanner_border_radius_md">12dp</dimen>
+    <dimen name="scanner_border_radius_lg">16dp</dimen>
+    <dimen name="scanner_border_radius_xl">20dp</dimen>
+    
+    <!-- Elevations -->
+    <dimen name="scanner_elevation_sm">2dp</dimen>
+    <dimen name="scanner_elevation_md">4dp</dimen>
+    <dimen name="scanner_elevation_lg">8dp</dimen>
+    <dimen name="scanner_elevation_xl">12dp</dimen>
+    
+    <!-- Animation Durations -->
+    <integer name="scanner_animation_duration_short">300</integer>
+    <integer name="scanner_animation_duration_medium">600</integer>
+    <integer name="scanner_animation_duration_long">1200</integer>
+</resources> 

@@ -1,0 +1,54 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		INJECTED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:5:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:8:5-69
+	android:name
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:8:22-66
+uses-permission#android.permission.INTERNET
+ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:11:22-64
+uses-feature#android.hardware.camera
+ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:14:5-16:35
+	android:required
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:16:9-32
+	android:name
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:15:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:17:5-19:36
+	android:required
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:18:9-57
+application
+ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:21:5-28:19
+activity#com.bureau.qrscanner.sdk.QrScannerActivity
+ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:22:9-27:77
+	android:screenOrientation
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:26:13-49
+	android:exported
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:24:13-37
+	android:configChanges
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:27:13-74
+	android:theme
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:25:13-69
+	android:name
+		ADDED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:23:13-46
+uses-sdk
+INJECTED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml
+INJECTED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml

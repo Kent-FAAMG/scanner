@@ -1,0 +1,39 @@
+-if class com.bureau.qrscanner.core.network.model.AadhaarData
+-keepnames class com.bureau.qrscanner.core.network.model.AadhaarData
+-if class com.bureau.qrscanner.core.network.model.AadhaarData
+-keep class com.bureau.qrscanner.core.network.model.AadhaarDataJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-if class com.bureau.qrscanner.core.network.model.AadhaarQrRequest
+-keepnames class com.bureau.qrscanner.core.network.model.AadhaarQrRequest
+-if class com.bureau.qrscanner.core.network.model.AadhaarQrRequest
+-keep class com.bureau.qrscanner.core.network.model.AadhaarQrRequestJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.bureau.qrscanner.core.network.model.AadhaarQrRequest
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-if class com.bureau.qrscanner.core.network.model.AadhaarQrRequest
+-keepclassmembers class com.bureau.qrscanner.core.network.model.AadhaarQrRequest {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-if class com.bureau.qrscanner.core.network.model.AadhaarQrResponse
+-keepnames class com.bureau.qrscanner.core.network.model.AadhaarQrResponse
+-if class com.bureau.qrscanner.core.network.model.AadhaarQrResponse
+-keep class com.bureau.qrscanner.core.network.model.AadhaarQrResponseJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-if class com.bureau.qrscanner.core.network.model.ErrorResponse
+-keepnames class com.bureau.qrscanner.core.network.model.ErrorResponse
+-if class com.bureau.qrscanner.core.network.model.ErrorResponse
+-keep class com.bureau.qrscanner.core.network.model.ErrorResponseJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.bureau.qrscanner.core.network.model.ErrorResponse
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-if class com.bureau.qrscanner.core.network.model.ErrorResponse
+-keepclassmembers class com.bureau.qrscanner.core.network.model.ErrorResponse {
+    public synthetic <init>(boolean,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}

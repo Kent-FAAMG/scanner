@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sdk_name">Bureau QR Scanner SDK</string>
+    <string name="camera_permission_required">Camera permission is required for QR scanning</string>
+    <string name="scan_timeout">Scan timeout. Please try again.</string>
+    <string name="scan_failed">QR scan failed. Please try again.</string>
+    <string name="document_type_aadhaar">Aadhaar ID</string>
+    <string name="document_type_pan">PAN</string>
+    <string name="document_type_voter">Voter ID</string>
+</resources> 

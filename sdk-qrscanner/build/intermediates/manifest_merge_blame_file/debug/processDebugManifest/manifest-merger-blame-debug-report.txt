@@ -1,0 +1,52 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bureau.qrscanner.sdk" >
+4
+5    <uses-sdk android:minSdkVersion="24" />
+6
+7    <!-- Camera permission for QR scanning -->
+8    <uses-permission android:name="android.permission.CAMERA" />
+8-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:5:5-65
+8-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:5:22-62
+9
+10    <!-- Flashlight permission for torch functionality -->
+11    <uses-permission android:name="android.permission.FLASHLIGHT" />
+11-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:8:5-69
+11-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:8:22-66
+12
+13    <!-- Internet permission for API calls -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:11:5-67
+14-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:11:22-64
+15
+16    <!-- Camera feature requirement -->
+17    <uses-feature
+17-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:14:5-16:35
+18        android:name="android.hardware.camera"
+18-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:15:9-47
+19        android:required="true" />
+19-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:16:9-32
+20    <uses-feature
+20-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:17:5-19:36
+21        android:name="android.hardware.camera.autofocus"
+21-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:18:9-57
+22        android:required="false" />
+22-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:19:9-33
+23
+24    <application>
+24-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:21:5-28:19
+25        <activity
+25-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:22:9-27:77
+26            android:name="com.bureau.qrscanner.sdk.QrScannerActivity"
+26-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:23:13-46
+27            android:configChanges="orientation|screenSize|keyboardHidden"
+27-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:27:13-74
+28            android:exported="false"
+28-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:24:13-37
+29            android:screenOrientation="portrait"
+29-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:26:13-49
+30            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+30-->/Users/rajatmishra/AndroidStudioProjects/Scanner/sdk-qrscanner/src/main/AndroidManifest.xml:25:13-69
+31    </application>
+32
+33</manifest>
