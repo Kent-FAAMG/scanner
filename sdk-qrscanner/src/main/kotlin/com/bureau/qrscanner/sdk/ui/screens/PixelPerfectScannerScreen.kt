@@ -16,6 +16,7 @@ import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -40,6 +41,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
@@ -61,6 +65,7 @@ import com.bureau.qrscanner.sdk.utils.QrFrameDetector
 import kotlinx.coroutines.delay
 import java.util.concurrent.TimeUnit
 import com.bureau.qrscanner.sdk.R
+import com.bureau.qrscanner.sdk.ui.Variables
 
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable
@@ -344,37 +349,155 @@ fun PixelPerfectScannerScreen(
                     modifier = Modifier.fillMaxSize()
                 )
 
-                // Instruction text - positioned exactly as in original design
-                Box(
+                // QR Scan Header Section
+                Column(
                     modifier = Modifier
-                        .align(Alignment.Center)
-                        .offset(y = 200.dp)
-                        .padding(horizontal = 32.dp)
+                        .align(Alignment.TopCenter)
+                        .offset(y = 120.dp)
+                        .padding(horizontal = 32.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Row(
+                    // QR Scan Title
+                    Text(
+                        text = "QR Scan",
+                        style = TextStyle(
+                            fontSize = Variables.FontSizeDisplayXs,
+                            lineHeight = Variables.LineHeightDisplayXs,
+                            fontFamily = FontFamily.Default,
+                            fontWeight = FontWeight(600),
+                            color = Variables.TextColorPrimary,
+                        )
+                    )
+                    
+                    Spacer(modifier = Modifier.height(8.dp))
+                    
+                    // Description Text
+                    Text(
+                        text = "Please scan to capture your government IDs QR",
+                        style = TextStyle(
+                            fontSize = Variables.FontSizeTextSm,
+                            lineHeight = Variables.LineHeightTextSm,
+                            fontFamily = FontFamily.Default,
+                            fontWeight = FontWeight(400),
+                            color = Variables.TextColorPrimary,
+                        ),
+                        textAlign = TextAlign.Center
+                    )
+                    
+                    Spacer(modifier = Modifier.height(16.dp))
+                    
+                    // Document Types Container
+                    Box(
+                        modifier = Modifier
+                            .border(
+                                width = 1.dp, 
+                                color = Variables.ColorsBorder.BorderSecondary
+                            )
+                            .width(278.dp)
+                            .height(72.dp)
+                            .padding(
+                                start = Variables.spacing3Xl, 
+                                top = Variables.spacingXl, 
+                                end = Variables.spacing3Xl, 
+                                bottom = Variables.spacingXl
+                            )
+                            .background(
+                                Color.White.copy(alpha = 0.9f),
+                                RoundedCornerShape(8.dp)
+                            ),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Row(
+                            horizontalArrangement = Arrangement.SpaceEvenly,
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier.fillMaxSize()
+                        ) {
+                            // Aadhaar
+                            Column(
+                                horizontalAlignment = Alignment.CenterHorizontally
+                            ) {
+                                Image(
+                                    painter = painterResource(id = R.drawable.ic_qr_code),
+                                    contentDescription = "Aadhaar",
+                                    modifier = Modifier.size(24.dp)
+                                )
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    text = "Aadhaar",
+                                    fontSize = 12.sp,
+                                    fontWeight = FontWeight.Medium,
+                                    color = Variables.TextColorPrimary
+                                )
+                            }
+                            
+                            // PAN
+                            Column(
+                                horizontalAlignment = Alignment.CenterHorizontally
+                            ) {
+                                Image(
+                                    painter = painterResource(id = R.drawable.ic_qr_code),
+                                    contentDescription = "PAN",
+                                    modifier = Modifier.size(24.dp)
+                                )
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    text = "PAN",
+                                    fontSize = 12.sp,
+                                    fontWeight = FontWeight.Medium,
+                                    color = Variables.TextColorPrimary
+                                )
+                            }
+                            
+                            // Voter ID
+                            Column(
+                                horizontalAlignment = Alignment.CenterHorizontally
+                            ) {
+                                Image(
+                                    painter = painterResource(id = R.drawable.ic_qr_code),
+                                    contentDescription = "Voter ID",
+                                    modifier = Modifier.size(24.dp)
+                                )
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    text = "Voter ID",
+                                    fontSize = 12.sp,
+                                    fontWeight = FontWeight.Medium,
+                                    color = Variables.TextColorPrimary
+                                )
+                            }
+                        }
+                    }
+                    
+                    Spacer(modifier = Modifier.height(24.dp))
+                    
+                    // Scanning instruction
+                    Box(
                         modifier = Modifier
                             .background(
                                 Color.Black.copy(alpha = 0.7f),
                                 RoundedCornerShape(12.dp)
                             )
-                            .padding(horizontal = 16.dp, vertical = 8.dp),
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.Center
+                            .padding(horizontal = 16.dp, vertical = 8.dp)
                     ) {
-                        // QR code icon
-                        Text(
-                            text = "📱",
-                            fontSize = 16.sp,
-                            color = Color.White
-                        )
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text(
-                            text = "Keep the QR code within the frame",
-                            color = Color.White,
-                            fontSize = 14.sp,
-                            fontWeight = FontWeight.Medium,
-                            textAlign = TextAlign.Center
-                        )
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.Center
+                        ) {
+                            Image(
+                                painter = painterResource(id = R.drawable.ic_qr_code),
+                                contentDescription = "QR Code",
+                                modifier = Modifier.size(16.dp),
+                                colorFilter = androidx.compose.ui.graphics.ColorFilter.tint(Color.White)
+                            )
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Text(
+                                text = "Keep the QR code within the frame",
+                                color = Color.White,
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.Medium,
+                                textAlign = TextAlign.Center
+                            )
+                        }
                     }
                 }
 
