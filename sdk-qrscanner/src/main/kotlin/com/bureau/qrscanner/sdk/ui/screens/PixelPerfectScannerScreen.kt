@@ -417,7 +417,7 @@ fun PixelPerfectScannerScreen(
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {
                                 Image(
-                                    painter = painterResource(id = R.drawable.ic_qr_code),
+                                    painter = painterResource(id = R.drawable.ic_file),
                                     contentDescription = "Aadhaar",
                                     modifier = Modifier.size(24.dp)
                                 )
@@ -435,7 +435,7 @@ fun PixelPerfectScannerScreen(
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {
                                 Image(
-                                    painter = painterResource(id = R.drawable.ic_qr_code),
+                                    painter = painterResource(id = R.drawable.ic_file),
                                     contentDescription = "PAN",
                                     modifier = Modifier.size(24.dp)
                                 )
@@ -453,7 +453,7 @@ fun PixelPerfectScannerScreen(
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {
                                 Image(
-                                    painter = painterResource(id = R.drawable.ic_qr_code),
+                                    painter = painterResource(id = R.drawable.ic_file),
                                     contentDescription = "Voter ID",
                                     modifier = Modifier.size(24.dp)
                                 )

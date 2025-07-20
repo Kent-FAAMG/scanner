@@ -3101,6 +3101,7 @@ drawable ic_close
 drawable ic_dots_1
 drawable ic_dots_2
 drawable ic_dots_3
+drawable ic_file
 drawable ic_flashlight_off
 drawable ic_flashlight_on
 drawable ic_help
